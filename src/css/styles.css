@@ -18,7 +18,7 @@ a {
 
 button {
     border-radius: 8px;
-    min-width: 90px;
+    min-width: 120px;
     height: 45px;
     background: linear-gradient(135deg, #4e75ff, #6c8cff);
     border: none;
@@ -52,22 +52,20 @@ button {
 .go-back {
     display: flex;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #4e75ff;
-    width: auto;
+    width: 140px;
     padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 24px;
-    background: linear-gradient(135deg, #e3e7ff, #f8f9ff);
     transition: color 0.3s ease, background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.back-link:hover,
-.back-link:focus {
+.go-back:hover,
+.go-back:focus {
     color: #ffffff;
-    background: linear-gradient(135deg, #4e75ff, #6c8cff);
+    background: #4e75ff;
     transform: scale(1.05);
     text-decoration: none;
 }
@@ -97,7 +95,6 @@ input:hover,
 input:focus {
     outline: none;
     border-color: #6c8cff;
-    box-shadow: 0 0 8px rgba(78, 117, 255, 0.5);
 }
 
 input:disabled {
@@ -166,3 +163,54 @@ button:disabled {
 }
 
 /* #######################snackbar##################*/
+fieldset {
+    border-radius: 8px;
+    border: 1px solid #b0b0b0;
+    max-width: 360px;
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    background-color: #f9f9ff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+
+
+fieldset:focus-within {
+    border-color: #000;
+}
+
+.form label:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form label:first-child input {
+    max-width: 380px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+
+label {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2e2f42;
+    cursor: pointer;
+}
+input[type="radio"] {
+    display: inline;
+    margin: 0;
+}
+
